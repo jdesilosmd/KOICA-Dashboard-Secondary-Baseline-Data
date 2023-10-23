@@ -26,10 +26,9 @@ indicator = st.sidebar.radio(
     'Pick one (1) indicator below:',
     ['***Indicator 1***', '***Indicator 2***', '***Indicator 3***', '***Indicator 4***',
      '***Indicator 5***', '***Indicator 6***', '***Indicator 7***', '***Indicator 8***',
-     '***Indicator 9***', '***Indicator 10***', '***Indicator 11***'],
+     '***Indicator 9***', '***Indicator 10***'],
     captions=['Adolescent Birth Rate',
               'Birth attended by a skilled birth attendant (SBA)',
-              'Facility-based delivery',
               'mCPR',
               'Adolescents who have informed decisions on ASRH',
               'LGU budget on ASRH',
@@ -1386,6 +1385,4 @@ elif indicator == '***Indicator 8***':
 elif indicator == '***Indicator 9***':
     st.write('Under Construction')
 elif indicator == '***Indicator 10***':
-    st.write('Under Construction')
-elif indicator == '***Indicator 11***':
     st.write('Under Construction')
