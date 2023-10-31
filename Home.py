@@ -56,8 +56,10 @@ fig_abr_sleyte2.update_traces(mode='lines')
 
 
 
-fig_abr_ph = px.line(df_ph, x='Year', y='ABR (15 to 19)', template='seaborn',
+fig_abr_ph = px.scatter(df_ph, x='Year', y='ABR (15 to 19)', template='seaborn',
+                          trendline='ols', trendline_color_override='black',
                           title='Adolescent Birth Rate, Philippines')
+fig_abr_ph.update_traces(mode='lines')
 
 
 
