@@ -30,20 +30,30 @@ fig_abr_summary = px.line(df, x='Year', y='ABR (15 to 19)', template='seaborn',
                           color='Location',
                           title='Adolescent Birth Rate for the UN-KOICA Sites and the Philippines')
 
-fig_abr_samar = px.line(df2_samar, x='Year', y='ABR (10 to 14)', template='seaborn',
+fig_abr_samar = px.scatter(df2_samar, x='Year', y='ABR (10 to 14)', template='seaborn',
+                          trendline='ols', trendline_color_override='black'
                           title='Adolescent Birth Rate, Samar UN-KOICA Sites')
+fig_abr_samar.update_traces(mode='lines')
 
 
-fig_abr_sleyte = px.line(df2_sleyte, x='Year', y='ABR (10 to 14)', template='seaborn',
+fig_abr_sleyte = px.scatter(df2_sleyte, x='Year', y='ABR (10 to 14)', template='seaborn',
+                          trendline='ols', trendline_color_override='black'
                           title='Adolescent Birth Rate, Southern Leyte UN-KOICA Sites')
+fig_abr_sleyte.update_traces(mode='lines')
 
 
-fig_abr_samar2 = px.line(df_samar, x='Year', y='ABR (15 to 19)', template='seaborn',
+fig_abr_samar2 = px.scatter(df_samar, x='Year', y='ABR (15 to 19)', template='seaborn',
+                          trendline='ols', trendline_color_override='black'
                           title='Adolescent Birth Rate, Samar UN-KOICA Sites')
+fig_abr_samar2.update_traces(mode='lines')
 
 
-fig_abr_sleyte2 = px.line(df_sleyte, x='Year', y='ABR (15 to 19)', template='seaborn',
+
+fig_abr_sleyte2 = px.scatter(df_sleyte, x='Year', y='ABR (15 to 19)', template='seaborn',
+                          trendline='ols', trendline_color_override='black'
                           title='Adolescent Birth Rate, Southern Leyte UN-KOICA Sites')
+fig_abr_sleyte2.update_traces(mode='lines')
+
 
 
 fig_abr_ph = px.line(df_ph, x='Year', y='ABR (15 to 19)', template='seaborn',
