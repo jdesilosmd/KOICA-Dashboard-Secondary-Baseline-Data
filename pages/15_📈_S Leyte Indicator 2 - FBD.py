@@ -56,11 +56,11 @@ with ind2_tab1:
 
         fig_graph_10_14_all = px.scatter(maternal_10_14_all, x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in Southern Leyte Sites (2012-2021)')
+                    title='Adolescent Birth (10-14 years) by Birthing Location in Southern Leyte Sites (2013-2021)')
         
         fig_graph_15_19_all = px.scatter(maternal_15_19_all, x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in Southern Leyte Sites (2012-2021)')
+                    title='Adolescent Birth (15-19 years) by Birthing Location in Southern Leyte Sites (2013-2021)')
         
         fig_graph_10_14_all.update_traces(mode='lines')
         fig_graph_15_19_all.update_traces(mode='lines')
@@ -93,31 +93,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         
         fig_graph_10_14.update_traces(mode='lines')
@@ -158,30 +158,30 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Libagon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Libagon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Libagon',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Libagon',:], x='Year', y='Percent Home', template='seaborn',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Libagon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Libagon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Libagon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Libagon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -220,31 +220,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Liloan',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Liloan',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Liloan',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Liloan',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Liloan',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Liloan',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Liloan',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Liloan',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -286,31 +286,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -350,31 +350,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Maasin',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Maasin',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Maasin',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Maasin',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Maasin',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Maasin',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Maasin',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Maasin',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -415,31 +415,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -480,31 +480,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -546,31 +546,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -611,31 +611,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Sogod',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Sogod',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Sogod',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Sogod',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Sogod',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Sogod',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Sogod',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Sogod',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -677,31 +677,31 @@ with ind2_tab1:
         if graph == 'Health Facility':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_graph_10_14 = px.scatter(maternal_10_14.loc[maternal_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_graph_15_19 = px.scatter(maternal_15_19.loc[maternal_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (15-19 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_graph_10_14.update_traces(mode='lines')
         fig_graph_15_19.update_traces(mode='lines')
@@ -755,7 +755,7 @@ with ind2_tab1:
                                         color='LGU', facet_col='LGU', facet_col_wrap=2,
                                         facet_col_spacing=0.09, template='seaborn', height=1200,
                                         trendline='ols', trendline_color_override='black',
-                                        title='Adolescent Birth (10-14 years) by Birthing Location in Southern Leyte Sites (2012-2021)')
+                                        title='Adolescent Birth (10-14 years) by Birthing Location in Southern Leyte Sites (2013-2021)')
 
             fig_maternal_10_14.update_layout(showlegend=False)
             fig_maternal_10_14.update_traces(mode='lines')
@@ -776,7 +776,7 @@ with ind2_tab1:
                                         color='LGU', facet_col='LGU', facet_col_wrap=2,
                                         facet_col_spacing=0.09, template='seaborn', height=1200,
                                         trendline='ols', trendline_color_override='black',
-                                        title='Adolescent Birth (15-19 years) by Birthing Location in Southern Leyte Sites (2012-2021)')
+                                        title='Adolescent Birth (15-19 years) by Birthing Location in Southern Leyte Sites (2013-2021)')
 
             fig_maternal_15_19.update_layout(showlegend=False)
             fig_maternal_15_19.update_traces(mode='lines')
@@ -829,11 +829,11 @@ with ind2_tab2:
 
         fig_graph2_10_14_all = px.scatter(occurrence_10_14_all, x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in Southern Leyte Sites (2012-2021)')
+                    title='Adolescent Birth (10-14 years) by Birthing Location in Southern Leyte Sites (2013-2021)')
         
         fig_graph2_15_19_all = px.scatter(occurrence_15_19_all, x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (15-19 years) by Birthing Location in Southern Leyte Sites (2012-2021)')
+                    title='Adolescent Birth (15-19 years) by Birthing Location in Southern Leyte Sites (2013-2021)')
         
 
         fig_graph2_10_14_all.update_traces(mode='lines')
@@ -868,31 +868,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Bontoc',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Bontoc',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
 
 
@@ -938,31 +938,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Libagon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Libagon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Libagon',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Libagon',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Libagon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Libagon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Libagon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Libagon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1006,31 +1006,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Liloan',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Liloan',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Liloan',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Liloan',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Liloan',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Liloan',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Liloan',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Liloan',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1074,31 +1074,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Limasawa',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Limasawa',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1143,31 +1143,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Maasin',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Maasin',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Maasin',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Maasin',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Maasin',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Maasin',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Maasin',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Maasin',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1211,31 +1211,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Macrohon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Macrohon',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1278,31 +1278,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Malitbog',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Malitbog',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1345,31 +1345,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Padre Burgos',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Padre Burgos',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1412,31 +1412,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Sogod',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Sogod',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Sogod',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Sogod',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Sogod',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Sogod',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Sogod',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Sogod',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1476,31 +1476,31 @@ with ind2_tab2:
         if graph == 'Health Facility':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Health Facility', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Home':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Home', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Others':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Others', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         elif graph == 'Not Stated':
             fig_occ_10_14 = px.scatter(occurrence_10_14.loc[occurrence_10_14['LGU']=='Tomas Oppus',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
             fig_occ_15_19 = px.scatter(occurrence_15_19.loc[occurrence_15_19['LGU']=='Tomas Oppus',:], x='Year', y='Percent Not Stated', template='seaborn',
                     trendline='ols', trendline_color_override='black',
-                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2012-2021)'.format(option_table))
+                    title='Adolescent Birth (10-14 years) by Birthing Location in {} (2013-2021)'.format(option_table))
         
         fig_occ_10_14.update_traces(mode='lines')
         fig_occ_15_19.update_traces(mode='lines')
@@ -1556,7 +1556,7 @@ with ind2_tab2:
                                         color='LGU', facet_col='LGU', facet_col_wrap=2,
                                         facet_col_spacing=0.09, template='seaborn', height=1200,
                                         trendline='ols', trendline_color_override='black',
-                                        title='Adolescent Birth (10-14 years) by Place of Occurrence in UN-KOICA Sites (2012-2021)')
+                                        title='Adolescent Birth (10-14 years) by Place of Occurrence in UN-KOICA Sites (2013-2021)')
 
                 
             fig_occurrence_10_14.update_layout(showlegend=False)
@@ -1578,7 +1578,7 @@ with ind2_tab2:
                                         color='LGU', facet_col='LGU', facet_col_wrap=2,
                                         facet_col_spacing=0.09, template='seaborn', height=1200,
                                         trendline='ols', trendline_color_override='black',
-                                        title='Adolescent Birth (15_19 years) by Place of Occurrence in UN-KOICA Sites (2012-2021)')
+                                        title='Adolescent Birth (15_19 years) by Place of Occurrence in UN-KOICA Sites (2013-2021)')
 
                 
             fig_occurrence_15_19.update_layout(showlegend=False)
