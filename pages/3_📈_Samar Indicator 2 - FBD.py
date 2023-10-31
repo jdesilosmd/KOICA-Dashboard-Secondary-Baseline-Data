@@ -82,10 +82,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_1'
+             key='radio_1'
         )
 
        
@@ -147,10 +144,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_2'
+             key='radio_2'
         )
         
         
@@ -210,10 +204,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_3'
+             key='radio_3'
         )
         
         if graph == 'Health Facility':
@@ -275,10 +266,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_4'
+             key='radio_4'
         )
         
         
@@ -340,10 +328,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_5'
+             key='radio_5'
         )
         
         if graph == 'Health Facility':
@@ -405,10 +390,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_6'
+             key='radio_6'
         )
         
         if graph == 'Health Facility':
@@ -470,10 +452,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_7'
+             key='radio_7'
         )
         
         if graph == 'Health Facility':
@@ -536,10 +515,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_8'
+             key='radio_8'
         )
         
         if graph == 'Health Facility':
@@ -601,10 +577,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_9'
+             key='radio_9'
         )
         
         if graph == 'Health Facility':
@@ -667,10 +640,7 @@ with ind2_tab1:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_10'
+             key='radio_10'
         )
         
         if graph == 'Health Facility':
@@ -858,10 +828,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_21'
+             key='radio_21'
         )
 
         if graph == 'Health Facility':
@@ -928,10 +895,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_22'
+             key='radio_22'
         )
         
         if graph == 'Health Facility':
@@ -996,10 +960,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_3'
+             key='radio_3'
         )
         
         if graph == 'Health Facility':
@@ -1064,10 +1025,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_3'
+             key='radio_3'
         )
         
         if graph == 'Health Facility':
@@ -1133,10 +1091,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_5'
+             key='radio_5'
         )
         
         if graph == 'Health Facility':
@@ -1201,10 +1156,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_6'
+             key='radio_6'
         )
         
         if graph == 'Health Facility':
@@ -1268,10 +1220,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_7'
+             key='radio_7'
         )
         
         if graph == 'Health Facility':
@@ -1335,10 +1284,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_8'
+             key='radio_8'
         )
         
         if graph == 'Health Facility':
@@ -1402,10 +1348,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_8'
+             key='radio_8'
         )
         
         if graph == 'Health Facility':
@@ -1466,10 +1409,7 @@ with ind2_tab2:
         graph = st.radio(
             'Birth attendant type:',
             ['Health Facility', 'Home', 'Others', 'Not Stated'],
-            captions=['Skilled Birth Attendants (i.e., doctor, nurse, midwife)',
-                        'Traditional Birth Attendants (i.e., hilot, manaram)',
-                        'Neither Health Facility nor Home',
-                        'Not reported'], key='radio_10'
+             key='radio_10'
         )
         
         if graph == 'Health Facility':
