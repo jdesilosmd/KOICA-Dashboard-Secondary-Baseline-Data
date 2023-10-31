@@ -13,8 +13,8 @@ df2 = pd.read_excel(data_link, sheet_name='ABR 10-14')
 df_samar = df.loc[df['Location']=='Samar', :]
 df_sleyte = df.loc[df['Location']=='Southern Leyte', :]
 df_ph = df.loc[df['Location']=='Philippines', :]
-df2_samar = df.loc[df2['Location']=='Samar', :]
-df2_sleyte = df.loc[df2['Location']=='Southern Leyte', :]
+df2_samar = df2.loc[df2['Location']=='Samar', :]
+df2_sleyte = df2.loc[df2['Location']=='Southern Leyte', :]
 
 
 
