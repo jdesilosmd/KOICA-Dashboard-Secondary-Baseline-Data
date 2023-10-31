@@ -28,15 +28,15 @@ fig_abr_summary = px.line(df, x='Year', y='ABR (15 to 19)', template='seaborn',
 
 fig_abr_samar = px.line(df_samar, x='Year', y='ABR (15 to 19)', template='seaborn',
                           title='Adolescent Birth Rate, Samar UN-KOICA Sites')
-fig_abr_samar.update_traces(color='firebrick')
+
 
 fig_abr_sleyte = px.line(df_sleyte, x='Year', y='ABR (15 to 19)', template='seaborn',
                           title='Adolescent Birth Rate, Southern Leyte UN-KOICA Sites')
-fig_abr_sleyte.update_traces(color='firebrick')
+
 
 fig_abr_ph = px.line(df_ph, x='Year', y='ABR (15 to 19)', template='seaborn',
                           title='Adolescent Birth Rate, Philippines')
-fig_abr_ph.update_traces(color='firebrick')
+
 
 
 with st.expander('Click to see ABR summary for all sites and the Philippines'):
@@ -47,6 +47,9 @@ with st.expander('Click to see ABR summary for Samar'):
 
 with st.expander('Click to see ABR summary for Southern Leyte'):
     st.plotly_chart(fig_abr_sleyte, use_container_width=True)
+
+with st.expander('Click to see ABR summary for the Philippines'):
+    st.plotly_chart(fig_abr_ph, use_container_width=True)
 
 
 
