@@ -87,7 +87,7 @@ with tab1:
     df_samar_10_14 = pd.DataFrame(samar_10_14)
 
     df_basey_10_14 = df_samar_10_14.loc[df_samar_10_14['LGU']=='Basey', ['Census Year', 'Population']]
-    df_calbayog_10_14 = df_samar_10_14.loc[df_samar_10_14['LGU']=='calbayog', ['Census Year', 'Population']]
+    df_calbayog_10_14 = df_samar_10_14.loc[df_samar_10_14['LGU']=='Calbayog', ['Census Year', 'Population']]
     df_calbiga_10_14 = df_samar_10_14.loc[df_samar_10_14['LGU']=='Calbiga', ['Census Year', 'Population']]
     df_catbalogan_10_14 = df_samar_10_14.loc[df_samar_10_14['LGU']=='Catbalogan', ['Census Year', 'Population']]
     df_marabut_10_14 = df_samar_10_14.loc[df_samar_10_14['LGU']=='Marabut', ['Census Year', 'Population']]
