@@ -99,7 +99,7 @@ st.dataframe(df_abr_summary, hide_index=True)
 #### ABR 10-14
 fig_abr_all_10_14 = px.line(df2, x='Year', y='ABR (10 to 14)', template='seaborn',
                           color='Location',
-                          title='Adolescent Birth Rate for Samar and Southern leyte Sites (10-14 Years Old)')
+                          title='Adolescent Birth Rate for Samar<br>and Southern leyte Sites (10-14 Years Old)')
 fig_abr_all_10_14.update_yaxes(title_font=dict(size=20))
 fig_abr_all_10_14.update_xaxes(title_font=dict(size=20))
 fig_abr_all_10_14.update_layout(title=dict(font=dict(size=22)))
