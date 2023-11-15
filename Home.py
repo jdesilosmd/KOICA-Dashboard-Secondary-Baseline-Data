@@ -115,7 +115,7 @@ df_sba_15_19 = df_sba.loc[df_sba['Age Range']=='15 to 19', :]
 
 
 #### SBA 10-14
-fig_sba_all_10_14 = px.line(df_sba_10_14, x='Year', y='SBA', template='seaborn',
+fig_sba_all_10_14 = px.line(df_sba_10_14, x='Year', y='Percent SBA', template='seaborn',
                           color='Location',
                           title='% Births Performed by Skilled Birth Attendants (SBA), All UN-KOICA Sites (10-14 Years Old)')
 fig_sba_all_10_14.update_yaxes(title_font=dict(size=20))
@@ -127,7 +127,7 @@ with st.expander('Click to see SBA summary for All UN-KOICA Sites (10-14 Years O
 
 
 #### TBA 10-14
-fig_sba_all_10_14 = px.line(df_sba_10_14, x='Year', y='TBA', template='seaborn',
+fig_sba_all_10_14 = px.line(df_sba_10_14, x='Year', y='Percent TBA', template='seaborn',
                           color='Location',
                           title='% Births Performed by Traditional Birth Attendants (SBA), All UN-KOICA Sites (10-14 Years Old)')
 fig_sba_all_10_14.update_yaxes(title_font=dict(size=20))
@@ -139,7 +139,7 @@ with st.expander('Click to see TBA summary for All UN-KOICA Sites (10-14 Years O
 
 
 #### SBA 15-19
-fig_sba_all_15_19 = px.line(df_sba_15_19, x='Year', y='SBA', template='seaborn',
+fig_sba_all_15_19 = px.line(df_sba_15_19, x='Year', y='Percent SBA', template='seaborn',
                           color='Location',
                           title='% Births Performed by Skilled Birth Attendants (SBA), All UN-KOICA Sites (15-19 Years Old)')
 fig_sba_all_15_19.update_yaxes(title_font=dict(size=20))
@@ -151,7 +151,7 @@ with st.expander('Click to see SBA summary for All UN-KOICA Sites (15-19 Years O
 
 
 #### TBA 15-19
-fig_sba_all_15_19 = px.line(df_sba_15_19, x='Year', y='TBA', template='seaborn',
+fig_sba_all_15_19 = px.line(df_sba_15_19, x='Year', y='Percent TBA', template='seaborn',
                           color='Location',
                           title='% Births Performed by Traditional Birth Attendants (SBA), All UN-KOICA Sites (15-19 Years Old)')
 fig_sba_all_15_19.update_yaxes(title_font=dict(size=20))
