@@ -117,10 +117,11 @@ df_sba_15_19 = df_sba.loc[df_sba['Age Range']=='15 to 19', :]
 #### SBA 10-14
 fig_sba_all_10_14 = px.line(df_sba_10_14, x='Year', y='Percent SBA', template='seaborn',
                           color='Location',
-                          title='% Births Performed by Skilled Birth Attendants (SBA), All UN-KOICA Sites (10-14 Years Old)')
+                          title='% Births Performed by Skilled Birth Attendants (SBA), <br>All UN-KOICA Sites (10-14 Years Old)')
 fig_sba_all_10_14.update_yaxes(title_font=dict(size=20))
 fig_sba_all_10_14.update_xaxes(title_font=dict(size=20))
 fig_sba_all_10_14.update_layout(title=dict(font=dict(size=18)))
+fig_sba_all_10_14.update_yaxes(range=[0, 100])
 
 with st.expander('Click to see SBA summary for All UN-KOICA Sites (10-14 Years Old)'):
     st.plotly_chart(fig_sba_all_10_14, use_container_width=True)
@@ -129,10 +130,11 @@ with st.expander('Click to see SBA summary for All UN-KOICA Sites (10-14 Years O
 #### TBA 10-14
 fig_sba_all_10_14 = px.line(df_sba_10_14, x='Year', y='Percent TBA', template='seaborn',
                           color='Location',
-                          title='% Births Performed by Traditional Birth Attendants (SBA), All UN-KOICA Sites (10-14 Years Old)')
+                          title='% Births Performed by Traditional Birth Attendants (SBA), <br>All UN-KOICA Sites (10-14 Years Old)')
 fig_sba_all_10_14.update_yaxes(title_font=dict(size=20))
 fig_sba_all_10_14.update_xaxes(title_font=dict(size=20))
 fig_sba_all_10_14.update_layout(title=dict(font=dict(size=18)))
+fig_sba_all_10_14.update_yaxes(range=[0, 100])
 
 with st.expander('Click to see TBA summary for All UN-KOICA Sites (10-14 Years Old)'):
     st.plotly_chart(fig_sba_all_10_14, use_container_width=True)
@@ -141,10 +143,11 @@ with st.expander('Click to see TBA summary for All UN-KOICA Sites (10-14 Years O
 #### SBA 15-19
 fig_sba_all_15_19 = px.line(df_sba_15_19, x='Year', y='Percent SBA', template='seaborn',
                           color='Location',
-                          title='% Births Performed by Skilled Birth Attendants (SBA), All UN-KOICA Sites (15-19 Years Old)')
+                          title='% Births Performed by Skilled Birth Attendants (SBA), <br>All UN-KOICA Sites (15-19 Years Old)')
 fig_sba_all_15_19.update_yaxes(title_font=dict(size=20))
 fig_sba_all_15_19.update_xaxes(title_font=dict(size=20))
 fig_sba_all_15_19.update_layout(title=dict(font=dict(size=18)))
+fig_sba_all_15_19.update_yaxes(range=[0, 100])
 
 with st.expander('Click to see SBA summary for All UN-KOICA Sites (15-19 Years Old)'):
     st.plotly_chart(fig_sba_all_15_19, use_container_width=True)
@@ -153,10 +156,26 @@ with st.expander('Click to see SBA summary for All UN-KOICA Sites (15-19 Years O
 #### TBA 15-19
 fig_sba_all_15_19 = px.line(df_sba_15_19, x='Year', y='Percent TBA', template='seaborn',
                           color='Location',
-                          title='% Births Performed by Traditional Birth Attendants (SBA), All UN-KOICA Sites (15-19 Years Old)')
+                          title='% Births Performed by Traditional Birth Attendants (SBA), <br>All UN-KOICA Sites (15-19 Years Old)')
 fig_sba_all_15_19.update_yaxes(title_font=dict(size=20))
 fig_sba_all_15_19.update_xaxes(title_font=dict(size=20))
 fig_sba_all_15_19.update_layout(title=dict(font=dict(size=18)))
+fig_sba_all_15_19.update_yaxes(range=[0, 100])
 
 with st.expander('Click to see TBA summary for All UN-KOICA Sites (15-19 Years Old)'):
     st.plotly_chart(fig_sba_all_15_19, use_container_width=True)
+
+
+
+### mCPR
+df_mcpr = pd.read_excel("https://docs.google.com/spreadsheets/d/e/2PACX-1vT-4-JITmOM93QoV_XtRCJCCibF1jofRqKnUdzZ0FKNJl4yKQupnRPaf-ZcNx7eoqHKIwum3czKjYfe/pub?output=xlsx")
+fig_mcpr_all = px.line(df_mcpr, x='Year', y='mCPR (in percent)', template='seaborn',
+                          color='Location',
+                          title='Modern Contraceptive Prevalence Rate (mCPR), in Percent,<br>All UN-KOICA Sites (15-19 Years Old)')
+fig_mcpr_all.update_yaxes(title_font=dict(size=20))
+fig_mcpr_all.update_xaxes(title_font=dict(size=20))
+fig_mcpr_all.update_layout(title=dict(font=dict(size=18)))
+fig_mcpr_all.update_yaxes(range=[0, 8])
+
+with st.expander('Click to see mCPR summary for All UN-KOICA Sites (15-19 Years Old)'):
+    st.plotly_chart(fig_mcpr_all, use_container_width=True)
