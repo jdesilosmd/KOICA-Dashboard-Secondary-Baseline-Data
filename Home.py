@@ -40,12 +40,14 @@ fig_abr_samar = px.scatter(df2_samar, x='Year', y='ABR (10 to 14)', template='se
                           trendline='ols', trendline_color_override='black',
                           title='Adolescent Birth Rate, Samar UN-KOICA Sites')
 fig_abr_samar.update_traces(mode='lines')
+fig_abr_samar.update_yaxes(range=[0, 5])
 
 
 fig_abr_sleyte = px.scatter(df2_sleyte, x='Year', y='ABR (10 to 14)', template='seaborn',
                           trendline='ols', trendline_color_override='black',
                           title='Adolescent Birth Rate, Southern Leyte UN-KOICA Sites')
 fig_abr_sleyte.update_traces(mode='lines')
+fig_abr_sleyte.update_yaxes(range=[0, 5])
 
 
 fig_abr_samar2 = px.scatter(df_samar, x='Year', y='ABR (15 to 19)', template='seaborn',
@@ -168,14 +170,20 @@ with st.expander('Click to see TBA summary for All UN-KOICA Sites (15-19 Years O
 
 
 ### mCPR
+contraceptive_PH = [360829, 23125]
+year_PH = [2020, 2021]
+
 df_mcpr = pd.read_excel("https://docs.google.com/spreadsheets/d/e/2PACX-1vT-4-JITmOM93QoV_XtRCJCCibF1jofRqKnUdzZ0FKNJl4yKQupnRPaf-ZcNx7eoqHKIwum3czKjYfe/pub?output=xlsx")
+#df_mcpr['Year'] = df_mcpr['Year'].astype(str)
 fig_mcpr_all = px.line(df_mcpr, x='Year', y='mCPR (in percent)', template='seaborn',
                           color='Location',
-                          title='Modern Contraceptive Prevalence Rate (mCPR), in Percent,<br>All UN-KOICA Sites (15-19 Years Old)')
-fig_mcpr_all.update_yaxes(title_font=dict(size=20))
+                          title='Modern Contraceptive Prevalence Rate (mCPR), in Percent,<br>All UN-KOICA Sites and Philippines (15-19 Years Old)')
+fig_mcpr_all.update_yaxes(title_font=dict(size=20),
+                          range=[0, 8])
 fig_mcpr_all.update_xaxes(title_font=dict(size=20))
-fig_mcpr_all.update_layout(title=dict(font=dict(size=18)))
-fig_mcpr_all.update_yaxes(range=[0, 8])
+fig_mcpr_all.update_layout(title=dict(font=dict(size=18)),
+                           xaxis=dict(tickvals=[2019, 2020, 2021, 2022]))
+fig_mcpr_all.update_yaxes(range=[0, 15])
 
 with st.expander('Click to see mCPR summary for All UN-KOICA Sites (15-19 Years Old)'):
     st.plotly_chart(fig_mcpr_all, use_container_width=True)
