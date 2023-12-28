@@ -990,9 +990,9 @@ with ind2_tab1:
 
 #### Combined Age Group
 
-SBA_bar_10_19(df=maternal_all, lgu='Southern Leyte', yrange=[0, 1200])
+SBA_bar_10_19(df=maternal_all, lgu='Southern Leyte', yrange=[0, 600])
 SBA_pct_bar_10_19(df=maternal_all, lgu='Southern Leyte')
-TBA_bar_10_19(df=maternal_all, lgu='Southern Leyte', yrange=[0, 1200])
+TBA_bar_10_19(df=maternal_all, lgu='Southern Leyte', yrange=[0, 600])
 TBA_pct_bar_10_19(df=maternal_all, lgu='Southern Leyte')
 
 
@@ -1643,8 +1643,8 @@ with ind2_tab2:
 
 #### Combined Age Group
 
-SBA_bar_10_19(df=occurrence_all, lgu='Southern Leyte', yrange=[0, 1200])
+SBA_bar_10_19(df=occurrence_all, lgu='Southern Leyte', yrange=[0, 600])
 SBA_pct_bar_10_19(df=occurrence_all, lgu='Southern Leyte')
-TBA_bar_10_19(df=occurrence_all, lgu='Southern Leyte', yrange=[0, 1200])
+TBA_bar_10_19(df=occurrence_all, lgu='Southern Leyte', yrange=[0, 600])
 TBA_pct_bar_10_19(df=occurrence_all, lgu='Southern Leyte')
 
